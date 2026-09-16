@@ -19,7 +19,38 @@
 
     <section>
       <h2>Checkout Details</h2>
-      <p>The transaction form will be added here in Session 2.</p>
+      <p>Fields marked (required) must be completed. Books are loaned for five calendar days.</p>
+      <form id="checkout-form" method="get">
+        <fieldset>
+          <legend>Reader and Book Information</legend>
+
+          <p>
+            <label for="reader-id">Reader ID (required)</label><br>
+            <!-- Text preserves leading zeros and allows letters in reader IDs. -->
+            <input type="text" id="reader-id" name="reader-id" required pattern=".*\S.*" title="Enter a reader ID, not just spaces.">
+          </p>
+
+          <p>
+            <label for="book-id">Book Barcode or ISBN (required)</label><br>
+            <!-- Barcodes and ISBNs are identifiers, not quantities for arithmetic. -->
+            <input type="text" id="book-id" name="book-id" required pattern=".*\S.*" title="Enter a book barcode or ISBN, not just spaces.">
+          </p>
+
+          <p>
+            <label for="checkout-date">Requested Checkout Date (required)</label><br>
+            <!-- A required date provides a valid calendar date for the checkout. -->
+            <input type="date" id="checkout-date" name="checkout-date" required>
+          </p>
+
+          <p>
+            <label for="notes">Notes (optional)</label><br>
+            <textarea id="notes" name="notes" rows="4" cols="40"></textarea>
+          </p>
+
+          <button type="submit">Submit Checkout Request</button>
+        </fieldset>
+      </form>
+      <p>This classroom form uses browser validation. After submission, field names and values appear in the URL. It does not save a checkout request or check library records.</p>
     </section>
   </main>
 
