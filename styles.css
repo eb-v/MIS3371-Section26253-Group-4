@@ -1,0 +1,94 @@
+/* WEEK 5 — ShelfLife Book Checkout */
+
+/* Make width calculations predictable. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #353f59;
+  background: #F7F7F8;
+}
+
+.page-shell {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.site-header {
+  background: #FFFFFF;
+  border-bottom: 4px solid #C8102E;
+}
+
+h1,
+h2 {
+  color: #7A1735;
+}
+
+.intro-section {
+  margin-bottom: 24px;
+}
+
+form {
+  background: #FFFFFF;
+  padding: 24px;
+  border-radius: 10px;
+}
+
+fieldset {
+  margin: 0 0 24px;
+  padding: 20px;
+  border: 1px solid #D4D7DB;
+  border-radius: 8px;
+}
+
+legend {
+  padding: 0 8px;
+  font-weight: 700;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font: inherit;
+  border: 1px solid #BFC4CA;
+  border-radius: 6px;
+  background: #FFFFFF;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  padding: 11px 18px;
+  font: inherit;
+  font-weight: 700;
+  color: #FFFFFF;
+  background: #C8102E;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.site-footer {
+  margin-top: 32px;
+  color: #676B72;
+  background: #FFFFFF;
+  border-top: 1px solid #E4E5E7;
+}
